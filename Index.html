@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🌌 Curiosidades do Sistema Solar</title>
+  
+  <!-- Estilização CSS personalizada para o tema espacial -->
   <style>
+    /* Estilo geral da página */
     body {
       background-color: #0b0c10;
       font-family: sans-serif;
       margin: 0;
       padding: 20px;
+      color: #e0e6ed;
     }
 
+    /* Estilo do cabeçalho */
     header {
       background-color: #1f1035;
       color: #f4d03f;
@@ -22,34 +27,50 @@
       border-radius: 12px 12px 0 0;
     }
 
+    /* Estilo da área principal (Main) */
     main {
       background-color: #121829;
-      color: #e0e6ed;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
       border-radius: 0 0 12px 12px;
     }
 
+    /* Classe personalizada para a section */
+    .conteudo-principal {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Estilo dos artigos de blog */
     article {
       display: flex;
       gap: 16px;
-      margin-bottom: 24px;
       padding-bottom: 16px;
       border-bottom: 1px solid #2a344d;
     }
 
+    /* Estilo das imagens */
     img {
       width: 80px;
       height: 80px;
       border-radius: 50%;
     }
 
+    /* Classe personalizada para o autor */
     .artigo-autor {
       font-weight: bold;
       color: #a0aab8;
     }
 
+    /* Classe personalizada para a área do vídeo */
+    .secao-video {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Estilo dos botões */
     button {
       background-color: #2a344d;
       color: #ffffff;
@@ -61,35 +82,62 @@
   </style>
 </head>
 <body>
+
+  <!-- Cabeçalho do site -->
   <header>
     <h1>🚀 Explorando o Sistema Solar 🪐</h1>
+    <!-- Parágrafo 1 -->
     <p>✨ Fatos rápidos e curiosidades incríveis sobre a nossa vizinhança espacial!</p>
   </header>
 
+  <!-- Conteúdo principal envelopado pela tag MAIN -->
   <main>
-    <article>
-      <img src="img/jupiter.png" alt="Ilustração do planeta Júpiter com a sua grande mancha vermelha visível">
-      <div>
-        <h2>🌪️ O gigante Júpiter e sua tempestade eterna</h2>
-        <p class="artigo-autor">✍️ Por: Seu Nome</p>
-        <p>Júpiter é o maior planeta do Sistema Solar! 😱 A famosa "Grande Mancha Vermelha" no planeta é, na verdade, uma tempestade gigante que dura há mais de 300 anos e é maior que a própria Terra! 🌍</p>
-        <button>❤️ <span>0</span></button>
-        <button>👍 <span>0</span></button>
-      </div>
-    </article>
+    <!-- Tag SECTION agrupando os artigos -->
+    <section class="conteudo-principal">
 
-    <article>
-      <img src="img/venus.png" alt="Ilustração do planeta Vênus brilhante em tons amarelados">
-      <div>
-        <h2>🔥 Vênus: o planeta mais quente do Sistema Solar</h2>
-        <p class="artigo-autor">✍️ Por: Seu Nome</p>
-        <p>Mesmo não sendo o planeta mais próximo do Sol, Vênus é o mais quente de todos! 🌡️ Suas nuvens espessas prendem o calor em um efeito estufa extremo, atingindo cerca de 465°C! ☀️</p>
-        <button>❤️ <span>0</span></button>
-        <button>👍 <span>0</span></button>
+      <!-- Artigo 1: Júpiter -->
+      <article>
+        <!-- Primeira imagem -->
+        <img src="img/jupiter.png" alt="Ilustração do planeta Júpiter com a sua grande mancha vermelha visível">
+        <!-- Primeira Div -->
+        <div>
+          <h2>🌪️ O gigante Júpiter e sua tempestade eterna</h2>
+          <p class="artigo-autor">✍️ Por: Seu Nome</p>
+          <!-- Parágrafo 2 -->
+          <p>Júpiter é o maior planeta do Sistema Solar! 😱 A famosa "Grande Mancha Vermelha" no planeta é, na verdade, uma tempestade gigante que dura há mais de 300 anos e é maior que a própria Terra! 🌍</p>
+          <button>❤️ <span>0</span></button>
+          <button>👍 <span>0</span></button>
+        </div>
+      </article>
+
+      <!-- Artigo 2: Vênus -->
+      <article>
+        <!-- Segunda imagem -->
+        <img src="img/venus.png" alt="Ilustração do planeta Vênus brilhante em tons amarelados">
+        <!-- Segunda Div -->
+        <div>
+          <h2>🔥 Vênus: o planeta mais quente do Sistema Solar</h2>
+          <p class="artigo-autor">✍️ Por: Seu Nome</p>
+          <!-- Parágrafo 3 -->
+          <p>Mesmo não sendo o planeta mais próximo do Sol, Vênus é o mais quente de todos! 🌡️ Suas nuvens espessas prendem o calor em um efeito estufa extremo, atingindo cerca de 465°C! ☀️</p>
+          <button>❤️ <span>0</span></button>
+          <button>👍 <span>0</span></button>
+        </div>
+      </article>
+
+      <!-- Área com o vídeo -->
+      <div class="secao-video">
+        <h2>🎥 Vídeo: Conheça o Sistema Solar</h2>
+        <!-- Parágrafo 4 -->
+        <p>Assista ao vídeo abaixo para ver uma representação visual incrível do nosso sistema planetário!</p>
+        <!-- Inclusão de Vídeo via Iframe do YouTube -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/n4p_O3yT0YI" title="Vídeo do Sistema Solar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </article>
+
+    </section>
   </main>
 
+  <!-- Script em JavaScript para o botão de curtida -->
   <script>
     const botoes = document.querySelectorAll("button");
 
