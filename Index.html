@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curiosidades do Sistema Solar</title>
+  <style>
+    header {
+      background-color: #183C63;
+      color: #FFFFFF;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 16px;
+    }
 
+    main {
+      background-color: #FFFFFF;
+      color: #183C63;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    article {
+      display: flex;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .artigo-autor {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explorando o Sistema Solar</h1>
+    <p>Fatos rápidos e curiosidades incríveis sobre os planetas do nosso vizinhança espacial</p>
+  </header>
+
+  <main>
+    <article>
+      <img src="img/jupiter.png" alt="Ilustração do planeta Júpiter com a sua grande mancha vermelha visível">
+      <div>
+        <h2>O gigante Júpiter e sua tempestade eterna</h2>
+        <p class="artigo-autor">Por: Seu Nome</p>
+        <p>Júpiter é o maior planeta do Sistema Solar! A famosa "Grande Mancha Vermelha" no planeta é, na verdade, uma tempestade gigante que dura há mais de 300 anos e é maior que a Terra.</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+      </div>
+    </article>
+
+    <article>
+      <img src="img/venus.png" alt="Ilustração do planeta Vênus brilhante em tons amarelados">
+      <div>
+        <h2>Vênus: o planeta mais quente do Sistema Solar</h2>
+        <p class="artigo-autor">Por: Seu Nome</p>
+        <p>Mesmo não sendo o planeta mais próximo do Sol, Vênus é o mais quente de todos. Suas nuvens espessas prendem o calor em um efeito estufa extremo, atingindo cerca de 465°C!</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+      let curtiu = false;
+
+      botao.addEventListener("click", botaoClicado);
+
+      function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        if (curtiu === false) {
+          texto.textContent++;
+          curtiu = true;
+        } else {
+          texto.textContent--;
+          curtiu = false; 
+        }
+      }
+    });
+  </script>
+</body>
+</html>
