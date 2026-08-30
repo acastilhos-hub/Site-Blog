@@ -1,3 +1,4 @@
+Ana Julia Ferreira Castilhos
 # Site-Blog
 repositorio do meu site, codigos e comentarios
 # 🌌 Curiosidades do Sistema Solar
@@ -9,6 +10,6 @@ Este projeto é um blog desenvolvido para a disciplina de tecnologia, com o obje
 A partir da estrutura base apresentada na aula, fiz as seguintes modificações autorais para personalizar o projeto:
 * **Tema Único:** Adaptação completa do conteúdo para o tema "Curiosidades do Sistema Solar".
 * **Estilização e Cores:** Personalização do CSS com uma paleta de cores temática espacial (tons de roxo escuro, azul e destaques amarelados).
-* **Textos e Conteúdo:** Elaboração de posts curtos com informações sobre os planetas (Júpiter e Vênus) e uso de emojis para deixar a leitura mais leve.
+* **Textos e Conteúdo:** Elaboração de posts curtos, com base em paginas da web, e com informações sobre os planetas (Júpiter e Venus)e uso de emojis para deixar a leitura mais leve.
 * **Imagens:** Escolha e organização de imagens representativas para cada planeta abordado.
 * **Interatividade:** Manutenção e estilização dos botões de reação para os leitores interagirem com os posts.
