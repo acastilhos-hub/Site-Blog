@@ -3,7 +3,7 @@ Ana Julia Ferreira Castilhos
 # Link para o site da Ana:  https://acastilhos-hub.github.io/Site-Blog/
 repositorio do meu site, codigos e comentarios
 # 🌌 Curiosidades do Sistema Solar
-
+entrega: curso do alura criando pagina web
 ## 🎯 Objetivo do Projeto
 Este projeto é um blog desenvolvido para a disciplina de tecnologia, com o objetivo de praticar conceitos fundamentais de desenvolvimento web (HTML, CSS e JavaScript) aprendidos nas aulas do Alura. O site apresenta fatos rápidos, curiosidades e dados interessantes sobre os planetas do nosso Sistema Solar de forma visual e interativa.
 
